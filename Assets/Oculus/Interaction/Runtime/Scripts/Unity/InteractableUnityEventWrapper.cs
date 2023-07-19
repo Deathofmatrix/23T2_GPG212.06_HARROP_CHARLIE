@@ -155,6 +155,11 @@ namespace Oculus.Interaction
             WhenSelectingInteractorViewRemoved.Invoke();
         }
 
+        public void ClickButton()
+        {
+            _whenSelect.Invoke();
+        }
+
         #region Inject
 
         public void InjectAllInteractableUnityEventWrapper(IInteractableView interactableView)
